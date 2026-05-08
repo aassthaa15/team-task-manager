@@ -1,16 +1,15 @@
-from pydantic import BaseModel, EmailStr
-from typing import Optional, List
+from pydantic import BaseModel
+from typing import Optional
 from datetime import date, datetime
 
-# Auth
 class UserCreate(BaseModel):
     name: str
-    email: EmailStr
+    email: str
     password: str
     role: str = "member"
 
 class UserLogin(BaseModel):
-    email: EmailStr
+    email: str
     password: str
 
 class UserOut(BaseModel):
@@ -25,7 +24,6 @@ class Token(BaseModel):
     token_type: str
     user: UserOut
 
-# Projects
 class ProjectCreate(BaseModel):
     name: str
     description: Optional[str] = ""
@@ -38,7 +36,6 @@ class ProjectOut(BaseModel):
     created_at: datetime
     class Config: from_attributes = True
 
-# Tasks
 class TaskCreate(BaseModel):
     title: str
     description: Optional[str] = ""
@@ -47,7 +44,7 @@ class TaskCreate(BaseModel):
     due_date: Optional[date] = None
 
 class TaskStatusUpdate(BaseModel):
-    status: str  # todo | in_progress | done
+    status: str
 
 class TaskOut(BaseModel):
     id: int
