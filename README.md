@@ -161,8 +161,3 @@ Frontend runs at: `https://devoted-strength-production-e7e7.up.railway.app/`
    VITE_API_URL=https://team-task-manager-production-ba80.up.railway.app/
    ```
 
-## Demo Video
-
-[Watch the demo](#) — 3 min walkthrough of all features
-
-
