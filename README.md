@@ -4,9 +4,9 @@ A full-stack web application for managing projects and tasks with role-based acc
 
 ## Live Demo
 
-- **Frontend:** `https://your-frontend.railway.app`
-- **Backend API:** `https://your-backend.railway.app`
-- **API Docs:** `https://your-backend.railway.app/docs`
+- **Frontend:** `https://devoted-strength-production-e7e7.up.railway.app/`
+- **Backend API:** `https://team-task-manager-production-ba80.up.railway.app/`
+- **API Docs:** `https://team-task-manager-production-ba80.up.railway.app/docs`
 
 
 ## Features
@@ -81,7 +81,7 @@ team-task-manager/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/team-task-manager.git
+git clone https://github.com/aassthaa15/team-task-manager
 cd team-task-manager
 ```
 
@@ -103,8 +103,8 @@ Run the backend:
 python -m uvicorn main:app --reload
 ```
 
-Backend runs at: `http://localhost:8000`  
-API docs at: `http://localhost:8000/docs`
+Backend runs at: `https://team-task-manager-production-ba80.up.railway.app/`  
+API docs at: `https://team-task-manager-production-ba80.up.railway.app/docs`
 
 ### 3. Frontend Setup
 
@@ -114,7 +114,7 @@ npm install
 npm run dev
 ```
 
-Frontend runs at: `http://localhost:5173`
+Frontend runs at: `https://devoted-strength-production-e7e7.up.railway.app/`
 
 > Make sure both backend and frontend are running at the same time.
 
@@ -158,7 +158,7 @@ Frontend runs at: `http://localhost:5173`
 3. Set **Start Command**: `npm run preview -- --host 0.0.0.0 --port $PORT`
 4. Add environment variable:
    ```
-   VITE_API_URL=https://your-backend.railway.app
+   VITE_API_URL=https://team-task-manager-production-ba80.up.railway.app/
    ```
 
 ## Demo Video
